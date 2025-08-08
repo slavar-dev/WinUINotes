@@ -26,6 +26,12 @@ namespace WinUINotes
         public MainWindow()
         {
             InitializeComponent();
+            // Hide the default system title bar.
+            ExtendsContentIntoTitleBar = true;
+            // Replace system title bar with the WinUI TitleBar.
+            SetTitleBar(AppTitleBar);
         }
     }
+
+
 }
